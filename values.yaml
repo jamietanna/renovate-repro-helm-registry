@@ -1,0 +1,10 @@
+image:
+  registry: registry.k8s.io
+  repository: sig-storage/hostpathplugin
+  tag: "v1.0.0"
+
+sidecars:
+  healthmonitor:
+    image:
+      repository: sig-storage/csi-external-health-monitor-controller
+      tag: v0.1.0
